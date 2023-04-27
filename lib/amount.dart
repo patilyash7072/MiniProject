@@ -50,7 +50,7 @@ class _amountState extends State<amount> {
                   } else if (int.parse(value) > bal) {
                     return 'Enter sufficient amount';
                   } else {
-                    bal = bal + int.parse(value);
+                    bal = bal - int.parse(value);
                   }
 
                   return null;
